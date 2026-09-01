@@ -5,10 +5,9 @@ const entrada = readline.createInterface({
 });
 entrada.question("digite sua : ", (idade)=>{
      idade= Number(idade)
-
 if (idade >= 16) {
-    alert("Entrada permitida!");
+    console.log("Entrada permitida!");
 } else {
-    alert("Entrada não permitida!");
+   console.log("Entrada não permitida!");
 }
 })
