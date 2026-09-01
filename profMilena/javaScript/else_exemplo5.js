@@ -4,15 +4,15 @@ const entrada = readline.createInterface({
   output: process.stdout,
 });
 entrada.question("digite a temperatura do ambiente: ", (temperatura)=>{
-
-if (temperatura < 15) {
-    alert("Muito frio");
+temperatura = Number(temperatura)
+if (temperatura <= 15) {
+   console.log("Muito frio");
 } else if (temperatura <= 24) {
-    alert("Frio");
+   console.log("Frio");
 } else if (temperatura <= 30) {
-    alert("Agradável");
+  console.log ("Agradável");
 } else {
-    alert("Muito quente");
+ console.log ("Muito quente");
 }
 
 })
